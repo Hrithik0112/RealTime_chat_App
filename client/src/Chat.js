@@ -21,8 +21,10 @@ const Chat = ({ socket, username, room }) => {
     });
   }, [socket]);
   return (
-    <div>
-      <div className="chat-head">Live Chat</div>
+    <div className="chat-window">
+      <div className="chat-header">
+        <p>Live Chat</p>
+      </div>
       <div className="chat-body"></div>
       <div className="chat-footer">
         <input placeholder="Type your text.." onChange={(e) => setCurrentMsg(e.target.value)} />
