@@ -114,30 +114,30 @@ body {
   word-break: break-word;
 }
 
-.you {
+#you {
   justify-content: flex-start;
 }
 
-.you .message-content {
+#you .message-content {
   justify-content: flex-start;
   color: white;
 }
 
-.you .message-meta {
+#you .message-meta {
   justify-content: flex-start;
   margin-left: 5px;
 }
 
-.other {
+#other {
   justify-content: flex-end;
 }
 
-.other .message-content {
+#other .message-content {
   justify-content: flex-end;
   background-color: #0096ff;
 }
 
-.other .message-meta {
+#other .message-meta {
   justify-content: flex-end;
   margin-right: 5px;
 }

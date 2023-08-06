@@ -32,10 +32,12 @@ const Chat = ({ socket, username, room }) => {
       <div className="chat-body">
         <ScrollToBottom className="messege-container">
           {msgList.map((msgContent, index) => {
-            const isYou = username === msgContent.author;
-            const messageClass = isYou ? "you" : "other";
             return (
-              <div className={`message ${messageClass}`} key={index}>
+              <div
+                className="message"
+                id={username === msgContent.author ? "you" : "other"}
+                key={index}
+              >
                 <div>
                   <div className="message-content">
                     <p>{msgContent.messege}</p>
